@@ -4,9 +4,7 @@ const typeDefs = require('./schema/typeDefs');
 const resolvers = require('./schema/resolvers');
 const connectDB = require('./config/db');
 
-connectDB(); // Establish connection to MongoDB
-
-// Create an instance of ApolloServer
+connectDB(); 
 const server = new ApolloServer({
     typeDefs,
     resolvers,
